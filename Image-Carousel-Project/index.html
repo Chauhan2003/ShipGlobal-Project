@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Image Carousel Project By Gagan Chauhan</title>
+</head>
+
+<body>
+    <div class="carousel-container">
+        <h1 id="carousel-heading">Carousel Image Project</h1>
+        <!-- Carousel Wrapper -->
+        <div class="carousel">
+            <!-- Carousel Slides -->
+            <img src="./images/image1.jpg" alt="Image 1" class="carousel-image">
+            <img src="./images/image2.jpg" alt="Image 2" class="carousel-image">
+            <img src="./images/image3.jpg" alt="Image 3" class="carousel-image">
+            <img src="./images/image4.jpg" alt="Image 4" class="carousel-image">
+        </div>
+
+        <!-- Navigation Controls -->
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+
+        <!-- Indicators (Optional) -->
+        <!-- These depend upon number of images you want to showcase -->
+        <div class="carousel-indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
