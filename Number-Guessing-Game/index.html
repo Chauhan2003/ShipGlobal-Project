@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Number Guessing Game Project By Gagan Chauhan</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Number Guessing Game</h1>
+        <p>Guess a number from 1 and 100</p>
+
+        <!-- Feedback display area -->
+        <p id="feedback" class="feedback"></p>
+
+        <div id="inputContainer">
+            <!-- Input for user guess -->
+            <input type="number" id="userGuess" placeholder="Enter your guess" min="1" max="100">
+
+            <!-- Button to submit guess -->
+            <button id="submitGuess">Check</button>
+        </div>
+
+        <!-- Attempt counter -->
+        <p id="attempts" class="attempts"></p>
+
+        <!-- Button to restart the game -->
+        <button id="restartGame" class="restart">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
